@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Experiences | DEEPBYTO</title>
+  <meta name="description" content="Explore personalized digital experiences by DEEPBYTO. Birthday websites, anniversary surprises, wedding invitations, and more." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://deepbyto.github.io/digital-experiences.html" />
+  <link rel="icon" href="https://deepbyto.github.io/favicon.ico" type="image/x-icon" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    /* Yahan aap apni index.html wali poori :root aur base CSS copy kar sakte hain, 
+       main sirf naye page ke liye zaroori styles de raha hoon taake file choti rahe. */
+    :root {
+      --bg-primary: #000000; --bg-secondary: #0a0a0a; --bg-card: rgba(20,20,20,0.85);
+      --accent: #ffffff; --accent-dim: rgba(255,255,255,0.1); --accent-glow: rgba(255,255,255,0.2);
+      --text-primary: #ffffff; --text-secondary: #e0e0e0; --text-muted: #a0a0a0;
+      --border-subtle: rgba(255,255,255,0.08); --glass-border: rgba(255,255,255,0.1);
+      --radius: 16px; --radius-sm: 10px;
+      --font-sans: 'Inter', sans-serif; --font-display: 'Orbitron', sans-serif;
+      --nav-bg: rgba(0,0,0,0.7); --nav-scrolled: rgba(0,0,0,0.95);
+    }
+    [data-theme="light"] {
+      --bg-primary: #f5f5f5; --bg-secondary: #eeeeee; --bg-card: rgba(255,255,255,0.85);
+      --accent: #000000; --accent-dim: rgba(0,0,0,0.08); --accent-glow: rgba(0,0,0,0.15);
+      --text-primary: #111111; --text-secondary: #333333; --text-muted: #666666;
+      --border-subtle: rgba(0,0,0,0.1); --glass-border: rgba(0,0,0,0.12);
+      --nav-bg: rgba(255,255,255,0.85); --nav-scrolled: rgba(255,255,255,0.95);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--font-sans); background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; overflow-x: hidden; transition: background 0.4s ease, color 0.3s ease; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+    .section-padding { padding: 120px 0 80px; } /* Extra top padding for fixed navbar */
+    .section-label { display: inline-block; font-family: var(--font-display); font-weight: 500; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-primary); margin-bottom: 12px; background: var(--accent-dim); padding: 4px 14px; border-radius: 50px; border: 1px solid var(--glass-border); }
+    .section-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(2rem,4vw,3rem); letter-spacing: -0.02em; margin-bottom: 16px; line-height: 1.15; }
+    .section-desc { color: var(--text-secondary); max-width: 600px; font-size: 1.05rem; line-height: 1.7; margin-bottom: 48px; }
+
+    /* Experience Grid */
+    .exp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+    .exp-card {
+      position: relative; background: var(--bg-card); border: 1px solid var(--glass-border);
+      border-radius: var(--radius); padding: 32px 28px; text-decoration: none; color: inherit;
+      transition: all 0.4s cubic-bezier(0.25,0.46,0.45,0.94); overflow: hidden;
+      display: flex; flex-direction: column; min-height: 240px; backdrop-filter: blur(10px);
+    }
+    .exp-card:hover {
+      border-color: var(--accent); transform: translateY(-8px);
+      box-shadow: 0 24px 45px rgba(0,0,0,0.3), 0 0 40px var(--accent-dim);
+    }
+    .exp-card .exp-icon {
+      font-size: 2.2rem; margin-bottom: 20px; color: var(--text-primary);
+      width: 60px; height: 60px; border-radius: 14px; background: var(--accent-dim);
+      border: 1px solid var(--glass-border); display: flex; align-items: center; justify-content: center;
+      transition: all 0.3s ease;
+    }
+    .exp-card:hover .exp-icon { background: var(--accent); color: var(--bg-primary); border-color: var(--accent); }
+    .exp-card h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.01em; }
+    .exp-card p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; flex-grow: 1; }
+    .exp-card .exp-arrow {
+      margin-top: 20px; display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.85rem; font-weight: 600; color: var(--text-muted); transition: all 0.3s ease;
+    }
+    .exp-card:hover .exp-arrow { color: var(--text-primary); gap: 12px; }
+    
+    /* More link */
+    .more-link-wrapper { margin-top: 48px; text-align: center; }
+    .more-link {
+      display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px;
+      border: 1px solid var(--glass-border); border-radius: 50px; font-size: 0.9rem;
+      color: var(--text-secondary); transition: all 0.3s ease;
+    }
+    .more-link:hover { border-color: var(--accent); background: var(--accent-dim); color: var(--text-primary); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .exp-grid { grid-template-columns: 1fr; }
+      .section-padding { padding: 100px 0 60px; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="particles-canvas" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas>
+
+  <!-- Header (Same as index.html) -->
+  <div id="site-header"></div>
+
+  <!-- Main Content -->
+  <section class="section-padding" style="position: relative; z-index: 2;">
+    <div class="container">
+      <span class="section-label">Digital Experiences</span>
+      <h1 class="section-title">Personalized <span style="color: var(--text-secondary);">Digital Moments</span></h1>
+      <p class="section-desc">We craft bespoke websites and interactive experiences for life's most meaningful moments. From birthdays to weddings, every creation is unique, responsive, and built to impress.</p>
+
+      <div class="exp-grid">
+        <!-- Birthday -->
+        <a href="https://github.com/DEEPBYTO/Digital-Experiences" target="_blank" rel="noopener noreferrer" class="exp-card">
+          <div class="exp-icon"><i class="fas fa-birthday-cake"></i></div>
+          <h3>Birthday Websites</h3>
+          <p>Surprise them with a personalized website filled with memories, photos, and heartfelt messages.</p>
+          <span class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <!-- Anniversary -->
+        <a href="https://github.com/DEEPBYTO/Digital-Experiences" target="_blank" rel="noopener noreferrer" class="exp-card">
+          <div class="exp-icon"><i class="fas fa-heart"></i></div>
+          <h3>Anniversary Surprises</h3>
+          <p>A beautiful digital journey through your time together, with elegant galleries and love notes.</p>
+          <span class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <!-- Wedding -->
+        <a href="https://github.com/DEEPBYTO/Digital-Experiences" target="_blank" rel="noopener noreferrer" class="exp-card">
+          <div class="exp-icon"><i class="fas fa-ring"></i></div>
+          <h3>Wedding Invitations</h3>
+          <p>Modern digital wedding invitations with RSVP, event details, and your love story.</p>
+          <span class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <!-- Valentine -->
+        <a href="https://github.com/DEEPBYTO/Digital-Experiences" target="_blank" rel="noopener noreferrer" class="exp-card">
+          <div class="exp-icon"><i class="fas fa-gift"></i></div>
+          <h3>Valentine's Day</h3>
+          <p>Express your love with an interactive experience, animations, and a personal message.</p>
+          <span class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <!-- Graduation -->
+        <a href="https://github.com/DEEPBYTO/Digital-Experiences" target="_blank" rel="noopener noreferrer" class="exp-card">
+          <div class="exp-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Graduation Celebrations</h3>
+          <p>Celebrate academic achievements with a digital tribute to their hard work and future.</p>
+          <span class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <!-- Greeting -->
+        <a href="https://github.com/DEEPBYTO/Digital-Experiences" target="_blank" rel="noopener noreferrer" class="exp-card">
+          <div class="exp-icon"><i class="fas fa-envelope-open-text"></i></div>
+          <h3>Greeting Websites</h3>
+          <p>Custom digital greeting cards for any occasion—thank you, congratulations, or just because.</p>
+          <span class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+        </a>
+      </div>
+
+      <div class="more-link-wrapper">
+        <a href="https://github.com/DEEPBYTO/Digital-Experiences" target="_blank" rel="noopener noreferrer" class="more-link">
+          More experiences... <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Same as index.html) -->
+  <div id="site-footer"></div>
+
+  <!-- Scripts: Load Header/Footer & Particles (Copy from index.html) -->
+  <script>
+    (function () {
+      'use strict';
+      // Theme init
+      const savedTheme = localStorage.getItem('deepbyto-theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+
+      // Particles (Simplified for brevity - use full one from index.html)
+      const canvas = document.getElementById('particles-canvas');
+      if (canvas) {
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        function resize() { canvas.width = innerWidth; canvas.height = innerHeight; }
+        addEventListener('resize', resize); resize();
+        class P { constructor() { this.x=Math.random()*canvas.width; this.y=Math.random()*canvas.height; this.s=Math.random()*1.5+0.3; this.vx=(Math.random()-0.5)*0.2; this.vy=(Math.random()-0.5)*0.2; this.o=Math.random()*0.3+0.05; } }
+        for(let i=0;i<60;i++) particles.push(new P());
+        function draw() {
+          ctx.clearRect(0,0,canvas.width,canvas.height);
+          const isLight = document.documentElement.getAttribute('data-theme')==='light';
+          particles.forEach(p=>{
+            p.x+=p.vx; p.y+=p.vy;
+            if(p.x<0||p.x>canvas.width) p.vx*=-1;
+            if(p.y<0||p.y>canvas.height) p.vy*=-1;
+            ctx.beginPath(); ctx.arc(p.x,p.y,p.s,0,Math.PI*2);
+            ctx.fillStyle = isLight ? `rgba(0,0,0,${p.o})` : `rgba(255,255,255,${p.o})`;
+            ctx.fill();
+          });
+          requestAnimationFrame(draw);
+        }
+        draw();
+      }
+
+      // Load Header/Footer from index.html
+      async function loadTemplate(id, target) {
+        const el = document.querySelector(target);
+        if(!el) return;
+        const tpl = document.getElementById(id);
+        if(tpl) { el.innerHTML = tpl.innerHTML; return; }
+        try {
+          const res = await fetch('/index.html');
+          const html = await res.text();
+          const doc = new DOMParser().parseFromString(html, 'text/html');
+          const remote = doc.getElementById(id);
+          if(remote) el.innerHTML = remote.innerHTML;
+        } catch(e) { console.error(e); }
+      }
+      // Yahan header/footer template IDs wahi hain jo index.html mein hain
+      // Agar aapne index.html ke templates copy nahi kiye hain is page par, 
+      // to fetch fallback chalega. Behtar hai ke aap index.html ke <template> tags 
+      // is page par bhi copy kar dein taake offline ya fast load ho.
+      
+      // For now, assuming templates are NOT on this page, we fetch.
+      // To make it work locally, ensure /index.html path is correct.
+      // Agar aap file:/// se open kar rahe hain to fetch fail hoga. 
+      // Production (GitHub Pages) par yeh kaam karega.
+      
+      // Alternative: Manually trigger header events after load
+      setTimeout(() => {
+        // Re-init header events (dropdown, mobile toggle) — simplified
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        if(navToggle && navLinks) {
+          navToggle.onclick = () => {
+            navLinks.classList.toggle('open');
+            navToggle.classList.toggle('active');
+          };
+        }
+        // Dropdowns
+        document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+          btn.onclick = (e) => {
+            e.preventDefault();
+            const dd = btn.closest('.nav-dropdown');
+            dd.classList.toggle('open');
+          };
+        });
+      }, 500);
+    })();
+  </script>
+</body>
+</html>
