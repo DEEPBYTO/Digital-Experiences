@@ -1,29 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Digital Experiences | DEEPBYTO</title>
-  <meta name="description" content="Explore personalized digital experiences by DEEPBYTO. Birthday websites, anniversary surprises, wedding invitations, and more." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://deepbyto.github.io/digital-experiences.html" />
-  <link rel="icon" href="https://deepbyto.github.io/favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="https://deepbyto.github.io/favicon.ico" type="image/x-icon" />
-  <meta name="theme-color" content="#000000" />
-  <meta property="og:title" content="Digital Experiences | DEEPBYTO" />
-  <meta property="og:description" content="Personalized digital experiences for birthdays, anniversaries, weddings, and more." />
-  <meta property="og:image" content="https://deepbyto.github.io/image.jpg" />
-  <meta property="og:url" content="https://deepbyto.github.io/digital-experiences.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="DEEPBYTO" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Digital Experiences | DEEPBYTO" />
-  <meta name="twitter:description" content="Personalized digital experiences for birthdays, anniversaries, weddings, and more." />
-  <meta name="twitter:image" content="https://deepbyto.github.io/image.jpg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="description" content="Discover personalized digital experiences by DEEPBYTO. Birthday websites, anniversary surprises, wedding invitations and more.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://deepbyto.github.io/digital-experiences/">
+  <link rel="icon" href="https://deepbyto.github.io/favicon.ico">
+  <meta name="theme-color" content="#000000">
+
+  <meta property="og:title" content="Digital Experiences | DEEPBYTO">
+  <meta property="og:description" content="More Than a Message. A Moment to Remember.">
+  <meta property="og:image" content="https://deepbyto.github.io/image.jpg">
+  <meta property="og:url" content="https://deepbyto.github.io/digital-experiences/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DEEPBYTO">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- DEEPBYTO Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Z8M6BXPP6"></script>
@@ -35,241 +35,1290 @@
   </script>
 
   <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
     :root {
-      --bg-primary: #000000; --bg-secondary: #0a0a0a; --bg-card: rgba(20,20,20,0.85);
-      --accent: #ffffff; --accent-dim: rgba(255,255,255,0.1); --accent-glow: rgba(255,255,255,0.2);
-      --text-primary: #ffffff; --text-secondary: #e0e0e0; --text-muted: #a0a0a0;
-      --border-subtle: rgba(255,255,255,0.08); --glass-border: rgba(255,255,255,0.1);
-      --radius: 16px; --radius-sm: 10px;
-      --font-sans: 'Inter', sans-serif; --font-display: 'Orbitron', sans-serif;
-      --nav-bg: rgba(0,0,0,0.7); --nav-scrolled: rgba(0,0,0,0.95);
+      --bg-primary:#000;
+      --bg-secondary:#0a0a0a;
+      --bg-card:rgba(20,20,20,.85);
+      --accent:#fff;
+      --accent-dim:rgba(255,255,255,.08);
+      --accent-glow:rgba(255,255,255,.18);
+      --text-primary:#fff;
+      --text-secondary:#e0e0e0;
+      --text-muted:#999;
+      --border-subtle:rgba(255,255,255,.09);
+      --glass-bg:rgba(10,10,10,.65);
+      --glass-border:rgba(255,255,255,.12);
+      --font-sans:'Inter',sans-serif;
+      --font-display:'Orbitron',sans-serif;
+      --shadow-color:rgba(0,0,0,.6);
     }
+
     [data-theme="light"] {
-      --bg-primary: #f5f5f5; --bg-secondary: #eeeeee; --bg-card: rgba(255,255,255,0.85);
-      --accent: #000000; --accent-dim: rgba(0,0,0,0.08); --accent-glow: rgba(0,0,0,0.15);
-      --text-primary: #111111; --text-secondary: #333333; --text-muted: #666666;
-      --border-subtle: rgba(0,0,0,0.1); --glass-border: rgba(0,0,0,0.12);
-      --nav-bg: rgba(255,255,255,0.85); --nav-scrolled: rgba(255,255,255,0.95);
+      --bg-primary:#f5f5f5;
+      --bg-secondary:#eee;
+      --bg-card:rgba(255,255,255,.9);
+      --accent:#000;
+      --accent-dim:rgba(0,0,0,.06);
+      --accent-glow:rgba(0,0,0,.13);
+      --text-primary:#111;
+      --text-secondary:#333;
+      --text-muted:#666;
+      --border-subtle:rgba(0,0,0,.1);
+      --glass-bg:rgba(255,255,255,.75);
+      --glass-border:rgba(0,0,0,.12);
+      --shadow-color:rgba(0,0,0,.13);
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: var(--font-sans); background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; overflow-x: hidden; transition: background 0.4s ease, color 0.3s ease; }
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
-    .section-padding { padding: 120px 0 80px; }
-    .section-label { display: inline-block; font-family: var(--font-display); font-weight: 500; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-primary); margin-bottom: 12px; background: var(--accent-dim); padding: 4px 14px; border-radius: 50px; border: 1px solid var(--glass-border); }
-    .section-title { font-family: var(--font-display); font-weight: 700; font-size: clamp(2rem,4vw,3rem); letter-spacing: -0.02em; margin-bottom: 16px; line-height: 1.15; }
-    .section-desc { color: var(--text-secondary); max-width: 600px; font-size: 1.05rem; line-height: 1.7; margin-bottom: 48px; }
 
-    .exp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
-    .exp-card {
-      position: relative; background: var(--bg-card); border: 1px solid var(--glass-border);
-      border-radius: var(--radius); padding: 32px 28px; text-decoration: none; color: inherit;
-      transition: all 0.4s cubic-bezier(0.25,0.46,0.45,0.94); overflow: hidden;
-      display: flex; flex-direction: column; min-height: 240px; backdrop-filter: blur(10px);
-    }
-    .exp-card:hover {
-      border-color: var(--accent); transform: translateY(-8px);
-      box-shadow: 0 24px 45px rgba(0,0,0,0.3), 0 0 40px var(--accent-dim);
-    }
-    .exp-card .exp-icon {
-      font-size: 2.2rem; margin-bottom: 20px; color: var(--text-primary);
-      width: 60px; height: 60px; border-radius: 14px; background: var(--accent-dim);
-      border: 1px solid var(--glass-border); display: flex; align-items: center; justify-content: center;
-      transition: all 0.3s ease;
-    }
-    .exp-card:hover .exp-icon { background: var(--accent); color: var(--bg-primary); border-color: var(--accent); }
-    .exp-card h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.01em; }
-    .exp-card p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; flex-grow: 1; }
-    .exp-card .exp-arrow {
-      margin-top: 20px; display: inline-flex; align-items: center; gap: 8px;
-      font-size: 0.85rem; font-weight: 600; color: var(--text-muted); transition: all 0.3s ease;
-    }
-    .exp-card:hover .exp-arrow { color: var(--text-primary); gap: 12px; }
+    html { scroll-behavior:smooth; scroll-padding-top:100px; }
 
-    .more-link-wrapper { margin-top: 48px; text-align: center; }
-    .more-link {
-      display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px;
-      border: 1px solid var(--glass-border); border-radius: 50px; font-size: 0.9rem;
-      color: var(--text-secondary); transition: all 0.3s ease; text-decoration: none;
+    body {
+      font-family:var(--font-sans);
+      background:var(--bg-primary);
+      color:var(--text-primary);
+      line-height:1.7;
+      overflow-x:hidden;
+      transition:background .4s,color .3s;
     }
-    .more-link:hover { border-color: var(--accent); background: var(--accent-dim); color: var(--text-primary); }
 
-    @media (max-width: 768px) {
-      .exp-grid { grid-template-columns: 1fr; }
-      .section-padding { padding: 100px 0 60px; }
+    a { color:inherit; text-decoration:none; }
+    button { font-family:inherit; cursor:pointer; }
+    img { max-width:100%; display:block; }
+
+    .container {
+      max-width:1200px;
+      margin:auto;
+      padding:0 24px;
+      position:relative;
+      z-index:2;
+    }
+
+    #particles-canvas {
+      position:fixed;
+      inset:0;
+      width:100%;
+      height:100%;
+      z-index:0;
+      pointer-events:none;
+    }
+
+    /* PAGE HERO */
+
+    .dx-hero {
+      min-height:90vh;
+      display:flex;
+      align-items:center;
+      position:relative;
+      overflow:hidden;
+      padding:140px 0 100px;
+      background:
+        radial-gradient(ellipse at 80% 30%,rgba(255,255,255,.07),transparent 40%),
+        radial-gradient(ellipse at 15% 75%,rgba(255,255,255,.045),transparent 38%),
+        var(--bg-primary);
+      border-bottom:1px solid var(--border-subtle);
+    }
+
+    .dx-hero-content { max-width:850px; }
+
+    .dx-label {
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:7px 16px;
+      border:1px solid var(--glass-border);
+      border-radius:50px;
+      background:var(--glass-bg);
+      color:var(--text-secondary);
+      font-family:var(--font-display);
+      font-size:10px;
+      letter-spacing:2px;
+      margin-bottom:28px;
+      backdrop-filter:blur(12px);
+    }
+
+    .dx-label i { font-size:11px; }
+
+    .dx-hero h1 {
+      font-family:var(--font-display);
+      font-size:clamp(42px,8vw,86px);
+      line-height:1.12;
+      font-weight:800;
+      letter-spacing:-2px;
+      margin-bottom:22px;
+    }
+
+    .dx-hero h1 span {
+      color:transparent;
+      -webkit-text-stroke:1px var(--text-primary);
+    }
+
+    .dx-subtitle {
+      font-family:var(--font-display);
+      font-size:clamp(14px,2vw,20px);
+      letter-spacing:1px;
+      margin-bottom:18px;
+    }
+
+    .dx-description {
+      max-width:630px;
+      color:var(--text-secondary);
+      font-size:15px;
+      line-height:1.9;
+    }
+
+    .dx-actions {
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-top:32px;
+    }
+
+    .dx-btn {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:13px 27px;
+      border-radius:50px;
+      border:1px solid var(--glass-border);
+      font-size:13px;
+      font-weight:600;
+      transition:all .3s ease;
+    }
+
+    .dx-btn-primary {
+      background:var(--text-primary);
+      color:var(--bg-primary);
+      border-color:var(--text-primary);
+    }
+
+    .dx-btn-primary:hover {
+      background:transparent;
+      color:var(--text-primary);
+      transform:translateY(-3px);
+    }
+
+    .dx-btn-secondary {
+      background:transparent;
+      color:var(--text-primary);
+    }
+
+    .dx-btn-secondary:hover {
+      background:var(--accent-dim);
+      transform:translateY(-3px);
+    }
+
+    .dx-hero-meta {
+      margin-top:55px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:28px;
+      color:var(--text-muted);
+      font-size:11px;
+      letter-spacing:1px;
+    }
+
+    .dx-hero-meta i { margin-right:7px; }
+
+    /* SECTIONS */
+
+    .dx-section {
+      padding:105px 0;
+      position:relative;
+      z-index:1;
+    }
+
+    .dx-heading {
+      max-width:700px;
+      margin-bottom:55px;
+    }
+
+    .dx-heading.center {
+      text-align:center;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .dx-kicker {
+      display:inline-block;
+      padding:5px 14px;
+      border:1px solid var(--glass-border);
+      background:var(--accent-dim);
+      border-radius:50px;
+      font-family:var(--font-display);
+      font-size:9px;
+      letter-spacing:2px;
+      margin-bottom:17px;
+    }
+
+    .dx-heading h2 {
+      font-family:var(--font-display);
+      font-size:clamp(27px,4vw,43px);
+      line-height:1.25;
+      margin-bottom:15px;
+    }
+
+    .dx-heading h2 span { opacity:.55; }
+
+    .dx-heading p {
+      color:var(--text-muted);
+      font-size:14px;
+    }
+
+    /* SERVICE GRID */
+
+    .dx-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .dx-card {
+      position:relative;
+      padding:30px;
+      min-height:390px;
+      display:flex;
+      flex-direction:column;
+      background:var(--bg-card);
+      border:1px solid var(--border-subtle);
+      border-radius:17px;
+      overflow:hidden;
+      transition:transform .35s,border-color .35s,box-shadow .35s;
+      isolation:isolate;
+    }
+
+    .dx-card::before {
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:-1;
+      background:radial-gradient(circle at 90% 5%,rgba(255,255,255,.09),transparent 45%);
+      opacity:0;
+      transition:opacity .35s;
+    }
+
+    .dx-card:hover {
+      transform:translateY(-7px);
+      border-color:rgba(255,255,255,.4);
+      box-shadow:0 20px 50px var(--shadow-color);
+    }
+
+    [data-theme="light"] .dx-card:hover {
+      border-color:rgba(0,0,0,.35);
+    }
+
+    .dx-card:hover::before { opacity:1; }
+
+    .dx-card-top {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:25px;
+    }
+
+    .dx-icon {
+      width:58px;
+      height:58px;
+      display:grid;
+      place-items:center;
+      border:1px solid var(--glass-border);
+      background:var(--accent-dim);
+      border-radius:14px;
+      font-size:23px;
+      transition:transform .3s;
+    }
+
+    .dx-card:hover .dx-icon { transform:scale(1.08) rotate(-5deg); }
+
+    .dx-number {
+      font-family:var(--font-display);
+      font-size:11px;
+      color:var(--text-muted);
+      letter-spacing:2px;
+    }
+
+    .dx-card h3 {
+      font-family:var(--font-display);
+      font-size:17px;
+      line-height:1.5;
+      margin-bottom:12px;
+    }
+
+    .dx-card p {
+      color:var(--text-muted);
+      font-size:13px;
+      margin-bottom:20px;
+    }
+
+    .dx-features {
+      list-style:none;
+      margin-bottom:25px;
+    }
+
+    .dx-features li {
+      color:var(--text-secondary);
+      font-size:12px;
+      padding:5px 0;
+    }
+
+    .dx-features li i {
+      font-size:10px;
+      margin-right:9px;
+      color:var(--text-primary);
+    }
+
+    .dx-card-link {
+      margin-top:auto;
+      padding-top:17px;
+      border-top:1px solid var(--border-subtle);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      font-size:12px;
+      font-weight:600;
+      color:var(--text-primary);
+      background:none;
+      border-left:0;
+      border-right:0;
+      border-bottom:0;
+      text-align:left;
+    }
+
+    .dx-card-link i { transition:transform .3s; }
+    .dx-card-link:hover i { transform:translateX(6px); }
+
+    /* PROCESS */
+
+    .dx-process {
+      background:var(--bg-secondary);
+      border-top:1px solid var(--border-subtle);
+      border-bottom:1px solid var(--border-subtle);
+    }
+
+    .dx-steps {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+    }
+
+    .dx-step {
+      padding:25px 20px;
+      border:1px solid var(--border-subtle);
+      border-radius:15px;
+      background:var(--bg-card);
+    }
+
+    .dx-step-num {
+      font-family:var(--font-display);
+      font-size:28px;
+      color:var(--text-muted);
+      margin-bottom:20px;
+    }
+
+    .dx-step h3 {
+      font-family:var(--font-display);
+      font-size:14px;
+      margin-bottom:10px;
+    }
+
+    .dx-step p { color:var(--text-muted); font-size:12px; }
+
+    /* SHOWCASE */
+
+    .dx-showcase {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .dx-demo {
+      border:1px solid var(--border-subtle);
+      border-radius:16px;
+      background:var(--bg-card);
+      overflow:hidden;
+      transition:.3s;
+    }
+
+    .dx-demo:hover {
+      transform:translateY(-5px);
+      border-color:var(--text-muted);
+    }
+
+    .dx-demo-art {
+      height:210px;
+      display:grid;
+      place-items:center;
+      font-size:64px;
+      background:
+        radial-gradient(circle at 50% 50%,rgba(255,255,255,.15),transparent 55%),
+        linear-gradient(135deg,#191919,#050505);
+      border-bottom:1px solid var(--border-subtle);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .dx-demo-art::after {
+      content:"";
+      position:absolute;
+      inset:0;
+      background:repeating-linear-gradient(135deg,transparent 0 12px,rgba(255,255,255,.025) 12px 13px);
+    }
+
+    .dx-demo-body { padding:23px; }
+
+    .dx-demo-tag {
+      font-size:9px;
+      letter-spacing:2px;
+      color:var(--text-muted);
+      font-family:var(--font-display);
+    }
+
+    .dx-demo h3 {
+      font-family:var(--font-display);
+      font-size:16px;
+      margin:10px 0;
+    }
+
+    .dx-demo p { font-size:12px; color:var(--text-muted); }
+
+    /* WHY US */
+
+    .dx-why {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+    }
+
+    .dx-why-item {
+      padding:24px;
+      border:1px solid var(--border-subtle);
+      border-radius:14px;
+      background:var(--bg-card);
+    }
+
+    .dx-why-item i {
+      font-size:20px;
+      margin-bottom:15px;
+    }
+
+    .dx-why-item h3 {
+      font-family:var(--font-display);
+      font-size:13px;
+      margin-bottom:8px;
+    }
+
+    .dx-why-item p { color:var(--text-muted); font-size:12px; }
+
+    /* PRICING */
+
+    .dx-pricing {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .dx-price-card {
+      padding:30px;
+      border:1px solid var(--border-subtle);
+      border-radius:16px;
+      background:var(--bg-card);
+    }
+
+    .dx-price-card.featured { border-color:var(--text-primary); }
+
+    .dx-price-card h3 {
+      font-family:var(--font-display);
+      font-size:17px;
+      margin:12px 0;
+    }
+
+    .dx-price-card p { font-size:12px; color:var(--text-muted); }
+
+    .dx-price {
+      font-family:var(--font-display);
+      font-size:17px;
+      margin:25px 0;
+    }
+
+    /* CTA */
+
+    .dx-cta {
+      padding:75px 30px;
+      text-align:center;
+      border:1px solid var(--glass-border);
+      border-radius:20px;
+      background:
+        radial-gradient(ellipse at 50% 0%,rgba(255,255,255,.10),transparent 65%),
+        var(--bg-card);
+    }
+
+    .dx-cta h2 {
+      font-family:var(--font-display);
+      font-size:clamp(27px,4vw,43px);
+      margin-bottom:15px;
+    }
+
+    .dx-cta p {
+      max-width:600px;
+      margin:0 auto 28px;
+      color:var(--text-muted);
+      font-size:13px;
+    }
+
+    /* FORM */
+
+    .dx-form {
+      max-width:750px;
+      margin:auto;
+      padding:32px;
+      background:var(--bg-card);
+      border:1px solid var(--border-subtle);
+      border-radius:18px;
+    }
+
+    .dx-form-grid {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:17px;
+    }
+
+    .dx-field { margin-bottom:18px; }
+
+    .dx-field label {
+      display:block;
+      font-size:12px;
+      font-weight:600;
+      margin-bottom:8px;
+    }
+
+    .dx-field input,.dx-field select,.dx-field textarea {
+      width:100%;
+      padding:13px 14px;
+      border:1px solid var(--border-subtle);
+      background:var(--bg-secondary);
+      color:var(--text-primary);
+      border-radius:9px;
+      font:13px var(--font-sans);
+      outline:none;
+    }
+
+    .dx-field input:focus,.dx-field select:focus,.dx-field textarea:focus {
+      border-color:var(--text-muted);
+    }
+
+    .dx-field textarea { min-height:120px; resize:vertical; }
+
+    .dx-note { color:var(--text-muted); font-size:11px; margin-top:15px; }
+
+    /* MODAL */
+
+    .dx-modal {
+      display:none;
+      position:fixed;
+      inset:0;
+      z-index:2000;
+      background:rgba(0,0,0,.85);
+      backdrop-filter:blur(12px);
+      align-items:center;
+      justify-content:center;
+      padding:20px;
+    }
+
+    .dx-modal.open { display:flex; }
+
+    .dx-modal-box {
+      position:relative;
+      width:min(480px,100%);
+      padding:35px;
+      border:1px solid var(--glass-border);
+      border-radius:18px;
+      background:#111;
+      color:white;
+      text-align:center;
+    }
+
+    .dx-modal-box h3 {
+      font-family:var(--font-display);
+      margin-bottom:15px;
+    }
+
+    .dx-modal-box p { font-size:13px; color:#aaa; }
+
+    .dx-modal-close {
+      position:absolute;
+      top:12px;
+      right:17px;
+      color:white;
+      border:0;
+      background:none;
+      font-size:25px;
+    }
+
+    /* FOOTER */
+
+    .dx-footer {
+      padding:28px 0;
+      border-top:1px solid var(--border-subtle);
+      color:var(--text-muted);
+      text-align:center;
+      font-size:11px;
+      position:relative;
+      z-index:2;
+    }
+
+    /* REVEAL */
+
+    .reveal {
+      opacity:0;
+      transform:translateY(24px);
+      transition:opacity .7s ease,transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    @media(max-width:950px) {
+      .dx-grid { grid-template-columns:repeat(2,1fr); }
+      .dx-steps { grid-template-columns:repeat(2,1fr); }
+      .dx-showcase,.dx-pricing { grid-template-columns:repeat(2,1fr); }
+    }
+
+    @media(max-width:650px) {
+      .dx-hero { min-height:80vh; padding:130px 0 80px; }
+      .dx-hero h1 { letter-spacing:-1px; }
+      .dx-section { padding:75px 0; }
+      .dx-grid,.dx-steps,.dx-showcase,.dx-pricing,.dx-why,.dx-form-grid {
+        grid-template-columns:1fr;
+      }
+      .dx-card { min-height:auto; }
+      .dx-hero-meta { gap:15px; }
+      .dx-form { padding:22px; }
+      .dx-cta { padding:55px 20px; }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      *,*::before,*::after {
+        scroll-behavior:auto!important;
+        animation:none!important;
+        transition:none!important;
+      }
+      .reveal { opacity:1; transform:none; }
     }
   </style>
 </head>
+
 <body>
-  <canvas id="particles-canvas" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas>
+<canvas id="particles-canvas" aria-hidden="true"></canvas>
 
-  <!-- Header (Same as index.html) -->
-  <div id="site-header"></div>
+<!-- Existing DEEPBYTO shared header -->
+<div id="site-header"></div>
 
-  <!-- Main Content -->
-  <section class="section-padding" style="position: relative; z-index: 2;">
+<main>
+
+  <!-- HERO -->
+  <section class="dx-hero">
     <div class="container">
-      <span class="section-label">Digital Experiences</span>
-      <h1 class="section-title">Personalized <span style="color: var(--text-secondary);">Digital Moments</span></h1>
-      <p class="section-desc">We craft bespoke websites and interactive experiences for life's most meaningful moments. From birthdays to weddings, every creation is unique, responsive, and built to impress.</p>
+      <div class="dx-hero-content">
+        <div class="dx-label">
+          <i class="fas fa-circle"></i> DEEPBYTO / DIGITAL EXPERIENCES
+        </div>
 
-      <div class="exp-grid">
-        <!-- Birthday -->
-        <a href="https://github.com/DEEPBYTO/Digital-Experiences" target="_blank" rel="noopener noreferrer" class="exp-card" data-experience="Birthday Websites" data-track="digital-experience">
-          <div class="exp-icon"><i class="fas fa-birthday-cake"></i></div>
-          <h3>Birthday Websites</h3>
-          <p>Surprise them with a personalized website filled with memories, photos, and heartfelt messages.</p>
-          <span class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></span>
-        </a>
+        <h1>Digital<br><span>Experiences.</span></h1>
 
-        <!-- Anniversary -->
-        <a href="https://github.com/DEEPBYTO/Digital-Experiences" target="_blank" rel="noopener noreferrer" class="exp-card" data-experience="Anniversary Surprises" data-track="digital-experience">
-          <div class="exp-icon"><i class="fas fa-heart"></i></div>
-          <h3>Anniversary Surprises</h3>
-          <p>A beautiful digital journey through your time together, with elegant galleries and love notes.</p>
-          <span class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></span>
-        </a>
+        <div class="dx-subtitle">More Than a Message. A Moment to Remember.</div>
 
-        <!-- Wedding -->
-        <a href="https://github.com/DEEPBYTO/Digital-Experiences" target="_blank" rel="noopener noreferrer" class="exp-card" data-experience="Wedding Invitations" data-track="digital-experience">
-          <div class="exp-icon"><i class="fas fa-ring"></i></div>
-          <h3>Wedding Invitations</h3>
-          <p>Modern digital wedding invitations with RSVP, event details, and your love story.</p>
-          <span class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></span>
-        </a>
+        <p class="dx-description">
+          Turn special moments into unforgettable digital experiences.
+          From interactive birthday surprises to personalized wedding
+          invitations, we create beautiful digital experiences designed
+          to make every occasion special.
+        </p>
 
-        <!-- Valentine -->
-        <a href="https://github.com/DEEPBYTO/Digital-Experiences" target="_blank" rel="noopener noreferrer" class="exp-card" data-experience="Valentine's Day Experiences" data-track="digital-experience">
-          <div class="exp-icon"><i class="fas fa-gift"></i></div>
-          <h3>Valentine's Day Experiences</h3>
-          <p>Express your love with an interactive experience, animations, and a personal message.</p>
-          <span class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></span>
-        </a>
+        <div class="dx-actions">
+          <a href="#experiences" class="dx-btn dx-btn-primary">
+            Explore Experiences <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="dx-btn dx-btn-secondary">
+            Create Your Experience
+          </a>
+        </div>
 
-        <!-- Graduation -->
-        <a href="https://github.com/DEEPBYTO/Digital-Experiences" target="_blank" rel="noopener noreferrer" class="exp-card" data-experience="Graduation Celebrations" data-track="digital-experience">
-          <div class="exp-icon"><i class="fas fa-graduation-cap"></i></div>
-          <h3>Graduation Celebrations</h3>
-          <p>Celebrate academic achievements with a digital tribute to their hard work and future.</p>
-          <span class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></span>
-        </a>
-
-        <!-- Greeting -->
-        <a href="https://github.com/DEEPBYTO/Digital-Experiences" target="_blank" rel="noopener noreferrer" class="exp-card" data-experience="Personalized Greeting Websites" data-track="digital-experience">
-          <div class="exp-icon"><i class="fas fa-envelope-open-text"></i></div>
-          <h3>Personalized Greeting Websites</h3>
-          <p>Custom digital greeting cards for any occasion—thank you, congratulations, or just because.</p>
-          <span class="exp-arrow">Explore <i class="fas fa-arrow-right"></i></span>
-        </a>
-      </div>
-
-      <div class="more-link-wrapper">
-        <a href="https://github.com/DEEPBYTO/Digital-Experiences" target="_blank" rel="noopener noreferrer" class="more-link" id="moreExperiencesLink">
-          More experiences... <i class="fas fa-external-link-alt"></i>
-        </a>
+        <div class="dx-hero-meta">
+          <span><i class="fas fa-code"></i> CREATIVE TECHNOLOGY</span>
+          <span><i class="fas fa-wand-magic-sparkles"></i> PERSONALIZED DESIGN</span>
+          <span><i class="fas fa-globe"></i> SHAREABLE EXPERIENCES</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer (Same as index.html) -->
-  <div id="site-footer"></div>
+  <!-- EXPERIENCES -->
+  <section class="dx-section" id="experiences">
+    <div class="container">
+      <div class="dx-heading center reveal">
+        <span class="dx-kicker">WHAT WE CREATE</span>
+        <h2>Experiences Made <span>Personal.</span></h2>
+        <p>Discover creative digital experiences designed around your most meaningful occasions.</p>
+      </div>
 
-  <script>
-    (function () {
-      'use strict';
+      <div class="dx-grid">
 
-      // Theme init
-      const savedTheme = localStorage.getItem('deepbyto-theme') || 'dark';
-      document.documentElement.setAttribute('data-theme', savedTheme);
+        <article class="dx-card reveal">
+          <div class="dx-card-top">
+            <div class="dx-icon"><i class="fas fa-cake-candles"></i></div>
+            <span class="dx-number">01 / 06</span>
+          </div>
+          <h3>Birthday Websites</h3>
+          <p>Turn a birthday wish into a personalized interactive surprise.</p>
+          <ul class="dx-features">
+            <li><i class="fas fa-check"></i> Animated cakes and candles</li>
+            <li><i class="fas fa-check"></i> Balloons and confetti</li>
+            <li><i class="fas fa-check"></i> Personalized messages</li>
+            <li><i class="fas fa-check"></i> Photo galleries</li>
+            <li><i class="fas fa-check"></i> Interactive surprises</li>
+          </ul>
+          <button class="dx-card-link choose-service" data-service="Birthday Websites">
+            Create Birthday Website <i class="fas fa-arrow-right"></i>
+          </button>
+        </article>
 
-      // Particles
-      const canvas = document.getElementById('particles-canvas');
-      if (canvas) {
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-        function resize() { canvas.width = innerWidth; canvas.height = innerHeight; }
-        addEventListener('resize', resize); resize();
-        class P { constructor() { this.x=Math.random()*canvas.width; this.y=Math.random()*canvas.height; this.s=Math.random()*1.5+0.3; this.vx=(Math.random()-0.5)*0.2; this.vy=(Math.random()-0.5)*0.2; this.o=Math.random()*0.3+0.05; } }
-        for(let i=0;i<60;i++) particles.push(new P());
-        function draw() {
-          ctx.clearRect(0,0,canvas.width,canvas.height);
-          const isLight = document.documentElement.getAttribute('data-theme')==='light';
-          particles.forEach(p=>{
-            p.x+=p.vx; p.y+=p.vy;
-            if(p.x<0||p.x>canvas.width) p.vx*=-1;
-            if(p.y<0||p.y>canvas.height) p.vy*=-1;
-            ctx.beginPath(); ctx.arc(p.x,p.y,p.s,0,Math.PI*2);
-            ctx.fillStyle = isLight ? `rgba(0,0,0,${p.o})` : `rgba(255,255,255,${p.o})`;
-            ctx.fill();
-          });
-          requestAnimationFrame(draw);
-        }
-        draw();
-      }
+        <article class="dx-card reveal">
+          <div class="dx-card-top">
+            <div class="dx-icon"><i class="fas fa-heart"></i></div>
+            <span class="dx-number">02 / 06</span>
+          </div>
+          <h3>Anniversary Surprises</h3>
+          <p>Celebrate your story with a personalized digital experience.</p>
+          <ul class="dx-features">
+            <li><i class="fas fa-check"></i> Romantic experiences</li>
+            <li><i class="fas fa-check"></i> Couple photo galleries</li>
+            <li><i class="fas fa-check"></i> Love stories and timelines</li>
+            <li><i class="fas fa-check"></i> Personalized messages</li>
+            <li><i class="fas fa-check"></i> Animated effects</li>
+          </ul>
+          <button class="dx-card-link choose-service" data-service="Anniversary Surprises">
+            Create Anniversary Surprise <i class="fas fa-arrow-right"></i>
+          </button>
+        </article>
 
-      // ===== GA4 Event Tracking for Experience Cards =====
-      document.querySelectorAll('.exp-card').forEach(card => {
-        card.addEventListener('click', function () {
-          const experienceName = this.getAttribute('data-experience') || 'Unknown';
-          const linkUrl = this.getAttribute('href') || '';
-          if (typeof gtag === 'function') {
-            gtag('event', 'digital_experience_click', {
-              experience_name: experienceName,
-              link_url: linkUrl,
-              page_location: window.location.href,
-              page_title: document.title
-            });
-          }
-        });
+        <article class="dx-card reveal">
+          <div class="dx-card-top">
+            <div class="dx-icon"><i class="fas fa-ring"></i></div>
+            <span class="dx-number">03 / 06</span>
+          </div>
+          <h3>Wedding Invitations</h3>
+          <p>Make your wedding invitation as special as the occasion.</p>
+          <ul class="dx-features">
+            <li><i class="fas fa-check"></i> Elegant digital invitations</li>
+            <li><i class="fas fa-check"></i> Bride and groom details</li>
+            <li><i class="fas fa-check"></i> Wedding countdown</li>
+            <li><i class="fas fa-check"></i> Venue and event schedule</li>
+            <li><i class="fas fa-check"></i> RSVP options</li>
+          </ul>
+          <button class="dx-card-link choose-service" data-service="Wedding Invitations">
+            Create Wedding Invitation <i class="fas fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <article class="dx-card reveal">
+          <div class="dx-card-top">
+            <div class="dx-icon"><i class="fas fa-heart-circle-bolt"></i></div>
+            <span class="dx-number">04 / 06</span>
+          </div>
+          <h3>Valentine's Day Experiences</h3>
+          <p>Express your feelings through a creative digital surprise.</p>
+          <ul class="dx-features">
+            <li><i class="fas fa-check"></i> Romantic interactive pages</li>
+            <li><i class="fas fa-check"></i> Animated hearts</li>
+            <li><i class="fas fa-check"></i> Personal love messages</li>
+            <li><i class="fas fa-check"></i> Interactive questions</li>
+            <li><i class="fas fa-check"></i> Photo memories</li>
+          </ul>
+          <button class="dx-card-link choose-service" data-service="Valentine's Day Experiences">
+            Create Valentine's Experience <i class="fas fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <article class="dx-card reveal">
+          <div class="dx-card-top">
+            <div class="dx-icon"><i class="fas fa-graduation-cap"></i></div>
+            <span class="dx-number">05 / 06</span>
+          </div>
+          <h3>Graduation Celebrations</h3>
+          <p>Give achievements a celebration worth remembering.</p>
+          <ul class="dx-features">
+            <li><i class="fas fa-check"></i> Graduate's name and photos</li>
+            <li><i class="fas fa-check"></i> Academic achievements</li>
+            <li><i class="fas fa-check"></i> Congratulatory messages</li>
+            <li><i class="fas fa-check"></i> Graduation animations</li>
+            <li><i class="fas fa-check"></i> Shareable pages</li>
+          </ul>
+          <button class="dx-card-link choose-service" data-service="Graduation Celebrations">
+            Create Graduation Celebration <i class="fas fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <article class="dx-card reveal">
+          <div class="dx-card-top">
+            <div class="dx-icon"><i class="fas fa-envelope-open-text"></i></div>
+            <span class="dx-number">06 / 06</span>
+          </div>
+          <h3>Personalized Greeting Websites</h3>
+          <p>Transform ordinary greetings into memorable digital moments.</p>
+          <ul class="dx-features">
+            <li><i class="fas fa-check"></i> Congratulations websites</li>
+            <li><i class="fas fa-check"></i> Thank-you greetings</li>
+            <li><i class="fas fa-check"></i> Special occasion messages</li>
+            <li><i class="fas fa-check"></i> Custom photo galleries</li>
+            <li><i class="fas fa-check"></i> Interactive animations</li>
+          </ul>
+          <button class="dx-card-link choose-service" data-service="Personalized Greeting Websites">
+            Create Greeting Website <i class="fas fa-arrow-right"></i>
+          </button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="dx-section dx-process" id="how-it-works">
+    <div class="container">
+      <div class="dx-heading center reveal">
+        <span class="dx-kicker">OUR PROCESS</span>
+        <h2>From Your Idea to <span>Reality.</span></h2>
+        <p>A simple process to turn your occasion into a personalized digital experience.</p>
+      </div>
+
+      <div class="dx-steps">
+        <div class="dx-step reveal">
+          <div class="dx-step-num">01</div>
+          <h3>Choose</h3>
+          <p>Select the digital experience that matches your occasion.</p>
+        </div>
+        <div class="dx-step reveal">
+          <div class="dx-step-num">02</div>
+          <h3>Personalize</h3>
+          <p>Share names, photos, dates and your special message.</p>
+        </div>
+        <div class="dx-step reveal">
+          <div class="dx-step-num">03</div>
+          <h3>Creation</h3>
+          <p>We design and customize your digital experience.</p>
+        </div>
+        <div class="dx-step reveal">
+          <div class="dx-step-num">04</div>
+          <h3>Share</h3>
+          <p>Receive your website link and share the special moment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY DEEPBYTO -->
+  <section class="dx-section">
+    <div class="container">
+      <div class="dx-heading center reveal">
+        <span class="dx-kicker">THE DEEPBYTO APPROACH</span>
+        <h2>Designed with <span>Purpose.</span></h2>
+        <p>Technology and creativity come together to make every experience unique.</p>
+      </div>
+
+      <div class="dx-why">
+        <div class="dx-why-item reveal">
+          <i class="fas fa-fingerprint"></i>
+          <h3>Personalized Design</h3>
+          <p>Experiences built around your names, photos and ideas.</p>
+        </div>
+        <div class="dx-why-item reveal">
+          <i class="fas fa-wand-magic-sparkles"></i>
+          <h3>Interactive Animations</h3>
+          <p>Thoughtful visual details and engaging interactions.</p>
+        </div>
+        <div class="dx-why-item reveal">
+          <i class="fas fa-mobile-screen"></i>
+          <h3>Responsive Design</h3>
+          <p>Beautiful experiences on mobile, tablet and desktop.</p>
+        </div>
+        <div class="dx-why-item reveal">
+          <i class="fas fa-link"></i>
+          <h3>Easy Sharing</h3>
+          <p>Share a personalized experience using its own web link.</p>
+        </div>
+        <div class="dx-why-item reveal">
+          <i class="fas fa-images"></i>
+          <h3>Meaningful Memories</h3>
+          <p>Bring together photographs, stories and special messages.</p>
+        </div>
+        <div class="dx-why-item reveal">
+          <i class="fas fa-code"></i>
+          <h3>Creative Engineering</h3>
+          <p>Modern web technology with attention to every detail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section class="dx-section dx-process" id="showcase">
+    <div class="container">
+      <div class="dx-heading center reveal">
+        <span class="dx-kicker">EXPERIENCE CONCEPTS</span>
+        <h2>Ideas Worth <span>Exploring.</span></h2>
+        <p>Discover the possibilities of personalized digital experiences.</p>
+      </div>
+
+      <div class="dx-showcase">
+        <article class="dx-demo reveal">
+          <div class="dx-demo-art">🎂</div>
+          <div class="dx-demo-body">
+            <span class="dx-demo-tag">DESIGN CONCEPT</span>
+            <h3>Birthday Magic</h3>
+            <p>A personalized birthday celebration with interactive surprises.</p>
+          </div>
+        </article>
+
+        <article class="dx-demo reveal">
+          <div class="dx-demo-art">💍</div>
+          <div class="dx-demo-body">
+            <span class="dx-demo-tag">DESIGN CONCEPT</span>
+            <h3>Elegant Wedding</h3>
+            <p>A modern invitation experience for a memorable wedding day.</p>
+          </div>
+        </article>
+
+        <article class="dx-demo reveal">
+          <div class="dx-demo-art">♥</div>
+          <div class="dx-demo-body">
+            <span class="dx-demo-tag">DESIGN CONCEPT</span>
+            <h3>Love & Memories</h3>
+            <p>A personalized anniversary story filled with special moments.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="dx-section" id="pricing">
+    <div class="container">
+      <div class="dx-heading center reveal">
+        <span class="dx-kicker">FLEXIBLE OPTIONS</span>
+        <h2>Your Experience. <span>Your Choice.</span></h2>
+        <p>Choose the level of customization that suits your idea.</p>
+      </div>
+
+      <div class="dx-pricing">
+        <div class="dx-price-card reveal">
+          <span class="dx-kicker">01 / BASIC</span>
+          <h3>Basic Experience</h3>
+          <p>A ready-to-customize design with your personal details.</p>
+          <div class="dx-price">Request a Quote</div>
+          <button class="dx-btn dx-btn-secondary choose-service" data-service="Basic Experience">Get Started</button>
+        </div>
+
+        <div class="dx-price-card featured reveal">
+          <span class="dx-kicker">02 / PREMIUM</span>
+          <h3>Premium Experience</h3>
+          <p>Additional personalization, animations and creative details.</p>
+          <div class="dx-price">Request a Quote</div>
+          <button class="dx-btn dx-btn-primary choose-service" data-service="Premium Experience">Get Started</button>
+        </div>
+
+        <div class="dx-price-card reveal">
+          <span class="dx-kicker">03 / CUSTOM</span>
+          <h3>Custom Experience</h3>
+          <p>A unique digital experience developed around your own concept.</p>
+          <div class="dx-price">Request a Quote</div>
+          <button class="dx-btn dx-btn-secondary choose-service" data-service="Custom Experience">Discuss Your Idea</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="dx-section">
+    <div class="container">
+      <div class="dx-cta reveal">
+        <span class="dx-kicker">YOUR MOMENT. YOUR STORY.</span>
+        <h2>Make Every Moment<br><span>Unforgettable.</span></h2>
+        <p>Your special moments deserve more than ordinary greetings. Let DEEPBYTO turn your ideas into beautiful interactive digital experiences.</p>
+        <a href="#contact" class="dx-btn dx-btn-primary">Start Your Experience <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="dx-section" id="contact">
+    <div class="container">
+      <div class="dx-heading center reveal">
+        <span class="dx-kicker">LET'S CREATE</span>
+        <h2>Tell Us Your <span>Idea.</span></h2>
+        <p>Share your requirements and let us know what kind of experience you want.</p>
+      </div>
+
+      <form class="dx-form reveal" id="dxForm">
+        <div class="dx-form-grid">
+          <div class="dx-field">
+            <label for="dxName">Full Name *</label>
+            <input id="dxName" name="name" required placeholder="Your name">
+          </div>
+          <div class="dx-field">
+            <label for="dxEmail">Email Address *</label>
+            <input id="dxEmail" name="email" type="email" required placeholder="you@example.com">
+          </div>
+        </div>
+
+        <div class="dx-form-grid">
+          <div class="dx-field">
+            <label for="dxService">Experience Type *</label>
+            <select id="dxService" name="service" required>
+              <option value="">Select an experience</option>
+              <option>Birthday Websites</option>
+              <option>Anniversary Surprises</option>
+              <option>Wedding Invitations</option>
+              <option>Valentine's Day Experiences</option>
+              <option>Graduation Celebrations</option>
+              <option>Personalized Greeting Websites</option>
+              <option>Basic Experience</option>
+              <option>Premium Experience</option>
+              <option>Custom Experience</option>
+            </select>
+          </div>
+          <div class="dx-field">
+            <label for="dxDate">Occasion Date</label>
+            <input id="dxDate" name="date" type="date">
+          </div>
+        </div>
+
+        <div class="dx-field">
+          <label for="dxMessage">Your Requirements *</label>
+          <textarea id="dxMessage" name="message" required placeholder="Describe your idea, preferred design, photos and special requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="dx-btn dx-btn-primary">
+          Prepare My Request <i class="fas fa-arrow-right"></i>
+        </button>
+
+        <p class="dx-note" id="dxStatus">
+          Your details will be prepared as a message for you to copy. This form does not submit or store orders.
+        </p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- Existing DEEPBYTO shared footer -->
+<div id="site-footer"></div>
+
+<!-- Preview dialog -->
+<div class="dx-modal" id="dxModal" role="dialog" aria-modal="true" aria-labelledby="dxModalTitle">
+  <div class="dx-modal-box">
+    <button class="dx-modal-close" id="dxModalClose" aria-label="Close">&times;</button>
+    <i class="fas fa-sparkles" style="font-size:30px;margin-bottom:20px"></i>
+    <h3 id="dxModalTitle">Your Experience</h3>
+    <p id="dxModalText">Let's create something special.</p>
+    <br>
+    <button class="dx-btn dx-btn-primary" id="dxModalAction">Start Your Request</button>
+  </div>
+</div>
+
+<script>
+(function() {
+  "use strict";
+
+  // Use the same saved theme as the main DEEPBYTO website.
+  const savedTheme = localStorage.getItem("deepbyto-theme") || "dark";
+  document.documentElement.setAttribute("data-theme", savedTheme);
+
+  // Load existing shared header and footer from homepage templates.
+  async function loadSharedShell() {
+    try {
+      const response = await fetch("/index.html");
+      if (!response.ok) throw new Error("Homepage shell unavailable");
+
+      const html = await response.text();
+      const doc = new DOMParser().parseFromString(html, "text/html");
+
+      ["header-template", "footer-template"].forEach(id => {
+        const template = doc.getElementById(id);
+        if (!template) return;
+
+        const target = id === "header-template"
+          ? document.getElementById("site-header")
+          : document.getElementById("site-footer");
+
+        if (target) target.replaceChildren(template.content.cloneNode(true));
       });
 
-      // Track "More experiences" link
-      const moreLink = document.getElementById('moreExperiencesLink');
-      if (moreLink) {
-        moreLink.addEventListener('click', function () {
-          if (typeof gtag === 'function') {
-            gtag('event', 'digital_experience_more_click', {
-              link_url: this.getAttribute('href') || '',
-              page_location: window.location.href
-            });
-          }
-        });
-      }
+      // Run the same header setup used by the main website.
+      const init = window.initDeepbytoHeader;
+      if (typeof init === "function") init();
 
-      // Load Header/Footer from index.html (same as before)
-      async function loadTemplate(id, target) {
-        const el = document.querySelector(target);
-        if(!el) return;
-        const tpl = document.getElementById(id);
-        if(tpl) { el.innerHTML = tpl.innerHTML; return; }
-        try {
-          const res = await fetch('/index.html');
-          const html = await res.text();
-          const doc = new DOMParser().parseFromString(html, 'text/html');
-          const remote = doc.getElementById(id);
-          if(remote) el.innerHTML = remote.innerHTML;
-        } catch(e) { console.error(e); }
-      }
-      loadTemplate('header-template', '#site-header');
-      loadTemplate('footer-template', '#site-footer');
+    } catch (error) {
+      console.error("DEEPBYTO shared navigation could not load:", error);
+    }
+  }
 
-      setTimeout(() => {
-        const navToggle = document.getElementById('navToggle');
-        const navLinks = document.getElementById('navLinks');
-        if(navToggle && navLinks) {
-          navToggle.onclick = () => {
-            navLinks.classList.toggle('open');
-            navToggle.classList.toggle('active');
-          };
+  loadSharedShell();
+
+  // Particle background
+  const canvas = document.getElementById("particles-canvas");
+  const ctx = canvas.getContext("2d");
+  let particles = [];
+  let animationFrame;
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function resizeCanvas() {
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width = innerWidth * dpr;
+    canvas.height = innerHeight * dpr;
+    canvas.style.width = innerWidth + "px";
+    canvas.style.height = innerHeight + "px";
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+
+    particles = Array.from({length:45}, () => ({
+      x:Math.random()*innerWidth,
+      y:Math.random()*innerHeight,
+      vx:(Math.random()-.5)*.25,
+      vy:(Math.random()-.5)*.25,
+      r:Math.random()*1.2+.3
+    }));
+  }
+
+  function drawParticles() {
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    const light = document.documentElement.dataset.theme === "light";
+    const color = light ? "0,0,0" : "255,255,255";
+
+    particles.forEach((p,i) => {
+      p.x += p.vx;
+      p.y += p.vy;
+
+      if(p.x<0 || p.x>innerWidth) p.vx *= -1;
+      if(p.y<0 || p.y>innerHeight) p.vy *= -1;
+
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle = `rgba(${color},.35)`;
+      ctx.fill();
+
+      for(let j=i+1;j<particles.length;j++) {
+        const q=particles[j];
+        const dx=p.x-q.x,dy=p.y-q.y;
+        const d=Math.sqrt(dx*dx+dy*dy);
+
+        if(d<110) {
+          ctx.beginPath();
+          ctx.moveTo(p.x,p.y);
+          ctx.lineTo(q.x,q.y);
+          ctx.strokeStyle=`rgba(${color},${.12*(1-d/110)})`;
+          ctx.lineWidth=.5;
+          ctx.stroke();
         }
-        document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
-          btn.onclick = (e) => {
-            e.preventDefault();
-            const dd = btn.closest('.nav-dropdown');
-            dd.classList.toggle('open');
-          };
-        });
-      }, 500);
-    })();
-  </script>
+      }
+    });
+
+    animationFrame = requestAnimationFrame(drawParticles);
+  }
+
+  resizeCanvas();
+  window.addEventListener("resize",resizeCanvas);
+
+  if(!reducedMotion) drawParticles();
+
+  // Reveal animations
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },{threshold:.1});
+
+  document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
+
+  // Service selection
+  const select = document.getElementById("dxService");
+
+  document.querySelectorAll(".choose-service").forEach(btn => {
+    btn.addEventListener("click", () => {
+      select.value = btn.dataset.service;
+      document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+    });
+  });
+
+  // Concept preview dialog
+  const modal = document.getElementById("dxModal");
+
+  document.querySelectorAll(".dx-demo").forEach(card => {
+    card.style.cursor = "pointer";
+    card.addEventListener("click", () => {
+      document.getElementById("dxModalTitle").textContent =
+        card.querySelector("h3").textContent;
+
+      document.getElementById("dxModalText").textContent =
+        card.querySelector("p").textContent +
+        " This is a design concept, not a live customer demo.";
+
+      modal.classList.add("open");
+    });
+  });
+
+  function closeModal() {
+    modal.classList.remove("open");
+  }
+
+  document.getElementById("dxModalClose").addEventListener("click",closeModal);
+
+  modal.addEventListener("click",e => {
+    if(e.target===modal) closeModal();
+  });
+
+  document.addEventListener("keydown",e => {
+    if(e.key==="Escape") closeModal();
+  });
+
+  document.getElementById("dxModalAction").addEventListener("click",() => {
+    closeModal();
+    document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+  });
+
+  // Request form: copy prepared message, no false claim of submission.
+  document.getElementById("dxForm").addEventListener("submit",async e => {
+    e.preventDefault();
+
+    const form=e.currentTarget;
+    if(!form.reportValidity()) return;
+
+    const data=new FormData(form);
+
+    const request=[
+      "DEEPBYTO DIGITAL EXPERIENCES REQUEST",
+      "",
+      "Name: "+data.get("name"),
+      "Email: "+data.get("email"),
+      "Experience: "+data.get("service"),
+      "Date: "+(data.get("date")||"Not specified"),
+      "Requirements: "+data.get("message")
+    ].join("\n");
+
+    const status=document.getElementById("dxStatus");
+
+    try {
+      await navigator.clipboard.writeText(request);
+      status.textContent="Request copied. Send this message to DEEPBYTO through an official contact channel.";
+    } catch(error) {
+      window.prompt("Copy your request:",request);
+    }
+  });
+
+})();
+</script>
 </body>
 </html>
