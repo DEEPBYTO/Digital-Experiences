@@ -102,6 +102,143 @@
       pointer-events:none;
     }
 
+    /* ================= SITE HEADER ================= */
+
+    .dx-site-header {
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      z-index:1000;
+      padding:18px 0;
+      background:var(--glass-bg);
+      border-bottom:1px solid var(--border-subtle);
+      backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
+      transition:background .3s,border-color .3s;
+    }
+
+    .dx-header-inner {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    .dx-logo {
+      font-family:var(--font-display);
+      font-weight:800;
+      font-size:18px;
+      letter-spacing:2px;
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+    }
+
+    .dx-logo i { font-size:15px; }
+
+    .dx-nav {
+      display:flex;
+      align-items:center;
+      gap:26px;
+    }
+
+    .dx-nav a {
+      font-size:12px;
+      font-weight:500;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      color:var(--text-secondary);
+      transition:color .25s;
+    }
+
+    .dx-nav a:hover { color:var(--text-primary); }
+
+    .dx-header-actions {
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .dx-theme-toggle {
+      width:38px;
+      height:38px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      border:1px solid var(--glass-border);
+      background:transparent;
+      color:var(--text-primary);
+      font-size:14px;
+      transition:background .25s,transform .25s;
+    }
+
+    .dx-theme-toggle:hover {
+      background:var(--accent-dim);
+      transform:rotate(15deg);
+    }
+
+    .dx-header-cta {
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:9px 20px;
+      border-radius:50px;
+      background:var(--text-primary);
+      color:var(--bg-primary);
+      font-size:12px;
+      font-weight:600;
+      border:1px solid var(--text-primary);
+      transition:background .3s,color .3s,transform .3s;
+    }
+
+    .dx-header-cta:hover {
+      background:transparent;
+      color:var(--text-primary);
+      transform:translateY(-2px);
+    }
+
+    .dx-mobile-toggle {
+      display:none;
+      width:38px;
+      height:38px;
+      place-items:center;
+      border-radius:8px;
+      border:1px solid var(--glass-border);
+      background:transparent;
+      color:var(--text-primary);
+      font-size:16px;
+    }
+
+    /* Mobile nav */
+    @media(max-width:820px) {
+      .dx-nav {
+        position:fixed;
+        top:74px;
+        left:0;
+        right:0;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:0;
+        padding:12px 24px 20px;
+        background:var(--bg-secondary);
+        border-bottom:1px solid var(--border-subtle);
+        transform:translateY(-140%);
+        transition:transform .35s ease;
+      }
+      .dx-nav.open { transform:translateY(0); }
+      .dx-nav a {
+        width:100%;
+        padding:13px 0;
+        border-bottom:1px solid var(--border-subtle);
+      }
+      .dx-nav a:last-child { border-bottom:0; }
+      .dx-mobile-toggle { display:grid; }
+      .dx-header-cta { display:none; }
+    }
+
+    /* ================= HERO ================= */
+
     .dx-hero {
       min-height:90vh;
       display:flex;
@@ -218,6 +355,8 @@
 
     .dx-hero-meta i { margin-right:7px; }
 
+    /* ================= SECTIONS ================= */
+
     .dx-section {
       padding:105px 0;
       position:relative;
@@ -260,6 +399,8 @@
       color:var(--text-muted);
       font-size:14px;
     }
+
+    /* SERVICE GRID */
 
     .dx-grid {
       display:grid;
@@ -381,6 +522,8 @@
     .dx-card-link i { transition:transform .3s; }
     .dx-card-link:hover i { transform:translateX(6px); }
 
+    /* PROCESS */
+
     .dx-process {
       background:var(--bg-secondary);
       border-top:1px solid var(--border-subtle);
@@ -415,6 +558,8 @@
 
     .dx-step p { color:var(--text-muted); font-size:12px; }
 
+    /* SHOWCASE */
+
     .dx-showcase {
       display:grid;
       grid-template-columns:repeat(3,1fr);
@@ -445,7 +590,6 @@
       border-bottom:1px solid var(--border-subtle);
       position:relative;
       overflow:hidden;
-      color:var(--text-primary);
     }
 
     .dx-demo-art::after {
@@ -472,6 +616,8 @@
 
     .dx-demo p { font-size:12px; color:var(--text-muted); }
 
+    /* WHY US */
+
     .dx-why {
       display:grid;
       grid-template-columns:repeat(3,1fr);
@@ -497,6 +643,8 @@
     }
 
     .dx-why-item p { color:var(--text-muted); font-size:12px; }
+
+    /* PRICING */
 
     .dx-pricing {
       display:grid;
@@ -527,6 +675,8 @@
       margin:25px 0;
     }
 
+    /* CTA */
+
     .dx-cta {
       padding:75px 30px;
       text-align:center;
@@ -549,6 +699,8 @@
       color:var(--text-muted);
       font-size:13px;
     }
+
+    /* FORM */
 
     .dx-form {
       max-width:750px;
@@ -593,6 +745,8 @@
 
     .dx-note { color:var(--text-muted); font-size:11px; margin-top:15px; }
 
+    /* MODAL */
+
     .dx-modal {
       display:none;
       position:fixed;
@@ -635,6 +789,94 @@
       font-size:25px;
     }
 
+    /* ================= SITE FOOTER ================= */
+
+    .dx-footer-site {
+      position:relative;
+      z-index:2;
+      padding:65px 0 0;
+      border-top:1px solid var(--border-subtle);
+      background:var(--bg-secondary);
+      margin-top:0;
+    }
+
+    .dx-footer-grid {
+      display:grid;
+      grid-template-columns:1.6fr 1fr 1fr 1fr;
+      gap:40px;
+      padding-bottom:50px;
+    }
+
+    .dx-footer-brand .dx-logo { margin-bottom:16px; }
+
+    .dx-footer-brand p {
+      color:var(--text-muted);
+      font-size:12px;
+      max-width:300px;
+      line-height:1.8;
+    }
+
+    .dx-footer-social {
+      display:flex;
+      gap:10px;
+      margin-top:18px;
+    }
+
+    .dx-footer-social a {
+      width:34px;
+      height:34px;
+      display:grid;
+      place-items:center;
+      border:1px solid var(--border-subtle);
+      border-radius:50%;
+      font-size:13px;
+      color:var(--text-secondary);
+      transition:background .25s,color .25s,transform .25s;
+    }
+
+    .dx-footer-social a:hover {
+      background:var(--text-primary);
+      color:var(--bg-primary);
+      transform:translateY(-3px);
+    }
+
+    .dx-footer-col h4 {
+      font-family:var(--font-display);
+      font-size:11px;
+      letter-spacing:2px;
+      margin-bottom:18px;
+      color:var(--text-primary);
+    }
+
+    .dx-footer-col ul { list-style:none; }
+
+    .dx-footer-col li { margin-bottom:11px; }
+
+    .dx-footer-col a {
+      font-size:12px;
+      color:var(--text-muted);
+      transition:color .25s;
+    }
+
+    .dx-footer-col a:hover { color:var(--text-primary); }
+
+    .dx-footer-bottom {
+      border-top:1px solid var(--border-subtle);
+      padding:22px 0;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      font-size:11px;
+      color:var(--text-muted);
+    }
+
+    .dx-footer-bottom a { color:var(--text-secondary); }
+    .dx-footer-bottom a:hover { color:var(--text-primary); }
+
+    /* REVEAL */
+
     .reveal {
       opacity:0;
       transform:translateY(24px);
@@ -650,6 +892,7 @@
       .dx-grid { grid-template-columns:repeat(2,1fr); }
       .dx-steps { grid-template-columns:repeat(2,1fr); }
       .dx-showcase,.dx-pricing { grid-template-columns:repeat(2,1fr); }
+      .dx-footer-grid { grid-template-columns:1fr 1fr; }
     }
 
     @media(max-width:650px) {
@@ -663,6 +906,7 @@
       .dx-hero-meta { gap:15px; }
       .dx-form { padding:22px; }
       .dx-cta { padding:55px 20px; }
+      .dx-footer-grid { grid-template-columns:1fr; gap:30px; }
     }
 
     @media(prefers-reduced-motion:reduce) {
@@ -679,11 +923,38 @@
 <body>
 <canvas id="particles-canvas" aria-hidden="true"></canvas>
 
-<!-- Header loaded automatically from homepage -->
-<div id="site-header"></div>
+<!-- ================= SITE HEADER (EMBEDDED) ================= -->
+<header class="dx-site-header" id="siteHeader">
+  <div class="container dx-header-inner">
+    <a href="/" class="dx-logo">
+      <i class="fas fa-bolt"></i> DEEPBYTO
+    </a>
+
+    <nav class="dx-nav" id="dxNav">
+      <a href="/">Home</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#how-it-works">Process</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="dx-header-actions">
+      <button class="dx-theme-toggle" id="dxThemeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+      <a href="#contact" class="dx-header-cta">
+        Get Started <i class="fas fa-arrow-right"></i>
+      </a>
+      <button class="dx-mobile-toggle" id="dxMobileToggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
 
 <main>
 
+  <!-- HERO -->
   <section class="dx-hero">
     <div class="container">
       <div class="dx-hero-content">
@@ -720,6 +991,7 @@
     </div>
   </section>
 
+  <!-- EXPERIENCES -->
   <section class="dx-section" id="experiences">
     <div class="container">
       <div class="dx-heading center reveal">
@@ -848,6 +1120,7 @@
     </div>
   </section>
 
+  <!-- HOW IT WORKS -->
   <section class="dx-section dx-process" id="how-it-works">
     <div class="container">
       <div class="dx-heading center reveal">
@@ -881,6 +1154,7 @@
     </div>
   </section>
 
+  <!-- WHY DEEPBYTO -->
   <section class="dx-section">
     <div class="container">
       <div class="dx-heading center reveal">
@@ -924,6 +1198,7 @@
     </div>
   </section>
 
+  <!-- SHOWCASE -->
   <section class="dx-section dx-process" id="showcase">
     <div class="container">
       <div class="dx-heading center reveal">
@@ -934,7 +1209,7 @@
 
       <div class="dx-showcase">
         <article class="dx-demo reveal">
-          <div class="dx-demo-art"><i class="fas fa-cake-candles"></i></div>
+          <div class="dx-demo-art">🎂</div>
           <div class="dx-demo-body">
             <span class="dx-demo-tag">DESIGN CONCEPT</span>
             <h3>Birthday Magic</h3>
@@ -943,7 +1218,7 @@
         </article>
 
         <article class="dx-demo reveal">
-          <div class="dx-demo-art"><i class="fas fa-ring"></i></div>
+          <div class="dx-demo-art">💍</div>
           <div class="dx-demo-body">
             <span class="dx-demo-tag">DESIGN CONCEPT</span>
             <h3>Elegant Wedding</h3>
@@ -952,10 +1227,10 @@
         </article>
 
         <article class="dx-demo reveal">
-          <div class="dx-demo-art"><i class="fas fa-heart"></i></div>
+          <div class="dx-demo-art">♥</div>
           <div class="dx-demo-body">
             <span class="dx-demo-tag">DESIGN CONCEPT</span>
-            <h3>Love and Memories</h3>
+            <h3>Love & Memories</h3>
             <p>A personalized anniversary story filled with special moments.</p>
           </div>
         </article>
@@ -963,6 +1238,7 @@
     </div>
   </section>
 
+  <!-- PRICING -->
   <section class="dx-section" id="pricing">
     <div class="container">
       <div class="dx-heading center reveal">
@@ -999,6 +1275,7 @@
     </div>
   </section>
 
+  <!-- CTA -->
   <section class="dx-section">
     <div class="container">
       <div class="dx-cta reveal">
@@ -1010,6 +1287,7 @@
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section class="dx-section" id="contact">
     <div class="container">
       <div class="dx-heading center reveal">
@@ -1070,9 +1348,62 @@
 
 </main>
 
-<!-- Footer loaded automatically from homepage -->
-<div id="site-footer"></div>
+<!-- ================= SITE FOOTER (EMBEDDED) ================= -->
+<footer class="dx-footer-site">
+  <div class="container">
+    <div class="dx-footer-grid">
 
+      <div class="dx-footer-brand">
+        <a href="/" class="dx-logo"><i class="fas fa-bolt"></i> DEEPBYTO</a>
+        <p>Creating personalized digital experiences for the moments that matter most. More than a message — a moment to remember.</p>
+        <div class="dx-footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="dx-footer-col">
+        <h4>EXPERIENCES</h4>
+        <ul>
+          <li><a href="#experiences">Birthday Websites</a></li>
+          <li><a href="#experiences">Anniversary Surprises</a></li>
+          <li><a href="#experiences">Wedding Invitations</a></li>
+          <li><a href="#experiences">Greeting Websites</a></li>
+        </ul>
+      </div>
+
+      <div class="dx-footer-col">
+        <h4>COMPANY</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#how-it-works">Our Process</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="dx-footer-col">
+        <h4>SUPPORT</h4>
+        <ul>
+          <li><a href="#contact">Get a Quote</a></li>
+          <li><a href="#contact">Custom Request</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="dx-footer-bottom">
+      <span>© 2026 DEEPBYTO. All rights reserved.</span>
+      <span>Crafted with <i class="fas fa-heart" style="color:#e74c3c"></i> for unforgettable moments.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Preview dialog -->
 <div class="dx-modal" id="dxModal" role="dialog" aria-modal="true" aria-labelledby="dxModalTitle">
   <div class="dx-modal-box">
     <button class="dx-modal-close" id="dxModalClose" aria-label="Close">&times;</button>
@@ -1088,62 +1419,55 @@
 (function() {
   "use strict";
 
+  /* ---------- THEME ---------- */
   const savedTheme = localStorage.getItem("deepbyto-theme") || "dark";
   document.documentElement.setAttribute("data-theme", savedTheme);
 
-  /* Load header and footer automatically from the homepage */
-  async function loadSharedShell() {
-    const candidates = [
-      "/index.html",
-      "/deepbyto/index.html",
-      "../index.html",
-      "../../index.html"
-    ];
+  const themeToggle = document.getElementById("dxThemeToggle");
+  const themeIcon = themeToggle.querySelector("i");
 
-    let doc = null;
-
-    for (const url of candidates) {
-      try {
-        const response = await fetch(url, { cache: "no-store" });
-        if (!response.ok) continue;
-
-        const html = await response.text();
-        const parsed = new DOMParser().parseFromString(html, "text/html");
-
-        if (parsed.getElementById("header-template") ||
-            parsed.getElementById("footer-template")) {
-          doc = parsed;
-          break;
-        }
-      } catch (e) {
-        continue;
-      }
-    }
-
-    if (!doc) {
-      console.warn("DEEPBYTO shared header/footer template not found.");
-      return;
-    }
-
-    ["header-template", "footer-template"].forEach(id => {
-      const template = doc.getElementById(id);
-      if (!template) return;
-
-      const target = id === "header-template"
-        ? document.getElementById("site-header")
-        : document.getElementById("site-footer");
-
-      if (target) target.replaceChildren(template.content.cloneNode(true));
-    });
-
-    if (typeof window.initDeepbytoHeader === "function") {
-      window.initDeepbytoHeader();
-    }
+  function updateThemeIcon() {
+    const t = document.documentElement.getAttribute("data-theme");
+    themeIcon.className = t === "light" ? "fas fa-sun" : "fas fa-moon";
   }
+  updateThemeIcon();
 
-  loadSharedShell();
+  themeToggle.addEventListener("click", () => {
+    const cur = document.documentElement.getAttribute("data-theme");
+    const next = cur === "light" ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("deepbyto-theme", next);
+    updateThemeIcon();
+  });
 
-  /* Particles */
+  /* ---------- MOBILE NAV ---------- */
+  const nav = document.getElementById("dxNav");
+  const mobileToggle = document.getElementById("dxMobileToggle");
+
+  mobileToggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
+    const icon = mobileToggle.querySelector("i");
+    icon.className = nav.classList.contains("open") ? "fas fa-times" : "fas fa-bars";
+  });
+
+  nav.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => {
+      nav.classList.remove("open");
+      mobileToggle.querySelector("i").className = "fas fa-bars";
+    });
+  });
+
+  /* ---------- STICKY HEADER SHADOW ---------- */
+  const header = document.getElementById("siteHeader");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 20) {
+      header.style.boxShadow = "0 10px 30px rgba(0,0,0,.35)";
+    } else {
+      header.style.boxShadow = "none";
+    }
+  }, { passive: true });
+
+  /* ---------- PARTICLES ---------- */
   const canvas = document.getElementById("particles-canvas");
   const ctx = canvas.getContext("2d");
   let particles = [];
@@ -1207,7 +1531,7 @@
 
   if (!reducedMotion) drawParticles();
 
-  /* Reveal */
+  /* ---------- REVEAL ---------- */
   const revealObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -1219,7 +1543,7 @@
 
   document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
 
-  /* Service selection */
+  /* ---------- SERVICE SELECTION ---------- */
   const select = document.getElementById("dxService");
 
   document.querySelectorAll(".choose-service").forEach(btn => {
@@ -1229,7 +1553,7 @@
     });
   });
 
-  /* Modal */
+  /* ---------- MODAL ---------- */
   const modal = document.getElementById("dxModal");
 
   document.querySelectorAll(".dx-demo").forEach(card => {
@@ -1257,7 +1581,7 @@
     document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
   });
 
-  /* Form */
+  /* ---------- FORM ---------- */
   document.getElementById("dxForm").addEventListener("submit", async e => {
     e.preventDefault();
 
